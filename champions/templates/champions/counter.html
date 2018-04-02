@@ -1,0 +1,87 @@
+{% extends 'champions/base.html' %}
+{% block body %}
+    {% if champ != "" and counter == "" %}
+        <div class="container" style="border: 3px solid red">
+            <div class="row">
+                <div class="col">
+                    <p>So you're playing {{ champ }} {{ lane }}</p>
+                </div>
+                <div class="col">
+                    <p>You may get countered by:</p>
+                    <div class="counterList">
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    1 of 3
+                </div>
+                <div class="col">
+                    2 of 3 (wider)
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+                    3 of 3
+                </div>
+            </div>
+        </div>
+    {% elif champ == "" and counter != "" %}
+        <div class="container" style="border: 3px solid red">
+            <div class="row">
+                <div class="col">
+                    <p>So you're playing {{ champ }} {{ lane }}</p>
+                </div>
+                <div class="col">
+                    <p>You may get countered by:</p>
+                    <div class="counterList">
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    1 of 3
+                </div>
+                <div class="col">
+                    2 of 3 (wider)
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+                    3 of 3
+                </div>
+            </div>
+        </div>
+    {% elif champ != "" and counter != "" %}
+        <div class="container" style="border: 3px solid red">
+            <div class="row">
+                <div class="col">
+                    <p>So you're playing {{ champ }} {{ lane }} against {{ counter }}</p>
+                </div>
+                <div class="col">
+                    <p>General tips for playing against {{ counter }}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>Runes</h3>
+                </div>
+                <div class="col">
+                    <h3>Items</h3>
+                </div>
+                <div class="col">
+                    <h3>Skills</h3>
+                </div>
+                <div class="col">
+                    <h3>Specific tips for {{ champ }}</h3>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <p> both were empty</p><!-- TODO BOTH CAN'T BE EMPTY -->
+    {% endif %}
+{% endblock %}

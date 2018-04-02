@@ -1,0 +1,46 @@
+{% extends 'champions/base.html' %}
+{% block body %}
+    {% load staticfiles %}
+    <div class="laning container">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="summoner-flag">
+                        <img id="chooseChampImg" src="{% static 'photos/img/summoner.png' %}" class="flag">
+                        <p id="champTextOne">CHOOSE</p>
+                        <p id="champTextTwo">YOUR</p>
+                        <p id="champTextThree">CHAMPION</p>
+                        <input type="text" name="chosenChamp" value="" id="champSelect" placeholder="e.g Brand">
+                    </div>
+                </div>
+                <div class="col-sm lanebox">
+                    <div class="summoner-flag">
+                        <p id="laneTextOne">YOUR <span id="laneTextTwo">LANE</span></p>
+
+                        <img id="summoner" src="{% static 'photos/img/summoner.png' %}">
+                        <div class="clickedDiamondBox">
+                            <img id="top" src="{% static 'photos/img/topselect.png' %}" class="lanebutton">
+                            <img id="jng" src="{% static 'photos/img/jngselect.png' %}" class="lanebutton">
+                            <img id="mid" src="{% static 'photos/img/midselect.png' %}" class="lanebutton">
+                            <img id="bot" src="{% static 'photos/img/botselect.png' %}" class="lanebutton">
+                            <img id="supp" src="{% static 'photos/img/suppselect.png' %}" class="lanebutton">
+                            <img id="clickedDiamond" class="hitIt" src="{% static 'photos/img/lanebutton.png' %}">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="summoner-flag">
+                        <img id="submitImg" src="{% static 'photos/img/summoner.png' %}" class="flag">
+                </div>
+                    <p id="counterTextOne">AND WHOM</p>
+                    <p id="counterTextTwo">YOU'RE</p>
+                    <p id="counterTextThree">COUNTERING</p>
+                    <input type="text" name="counterChamp" value="" id="champCounter" placeholder="e.g Heimerdinger">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="buttonDiv">
+        <button type="button" id="submitButton"><span id="buttonText">GO</span></button>
+    </div>
+{% endblock %}

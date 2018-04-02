@@ -1,0 +1,329 @@
+body {
+    background-image: url("../photos/background/teemo.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+input {
+    text-align: center;
+}
+
+.container {
+    margin-top: 5%;
+    height: 100%;
+}
+
+.laning {
+    position: relative;
+    height: 100%;
+    font-family: 'Domine', serif;
+}
+
+.row {
+    height: 100%;
+}
+
+#diamond {
+    /*margin-top: 85%; */
+    margin-left: 42%;
+}
+
+#diamond:hover {
+    content: url("../photos/img/lanebutton2.png");
+    cursor: pointer;
+}
+
+.clickedDiamondBox {
+    width: 90%;
+    left: 23.5%;
+    position: absolute;
+    bottom: 25%;
+}
+
+#clickedDiamond {
+    content: url("../photos/img/middlebutton.png");
+    margin-left: 14.5%;
+    width: 30%;
+    margin-bottom: -3%;
+}
+
+.diamondbox {
+    position: absolute;
+    height: auto;
+}
+
+.summoner-flag {
+    max-width: 100%;
+    height: auto;
+}
+
+.flag {
+    position: absolute;
+}
+
+#summoner {
+    height: auto;
+    width: 100%;
+}
+
+#submitButton {
+    font-family: 'Domine', serif;
+    background-color: #131c1d;
+    border: 3px solid #067d8e;
+    color: chocolate;
+}
+
+#submitButton:hover {
+    border: 3px solid #7bede9;
+}
+
+#buttonText {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#champSelect {
+    font-family: 'Domine', serif;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: lightgrey;
+    opacity: 0.7;
+}
+
+#champCounter {
+    font-family: 'Domine', serif;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: lightgrey;
+    opacity: 0.7;
+}
+
+#champTextOne {
+    position: absolute;
+    color: antiquewhite;
+    top: 20%;
+    left: 34%;
+    opacity: 0.7;
+}
+
+#champTextTwo {
+    position: absolute;
+    color: antiquewhite;
+    opacity: 0.7;
+}
+
+#champTextThree {
+    position: absolute;
+    color: chocolate;
+    opacity: 0.7;
+}
+
+#laneTextOne {
+    color: antiquewhite;
+    position: absolute;
+    opacity: 0.7;
+}
+
+#laneTextTwo {
+    color: chocolate;
+}
+
+#navigation {
+    background-color: black;
+}
+
+#counterTextOne {
+    font-family: 'Domine', serif;
+    position: absolute;
+    opacity: 0.7;
+    color: antiquewhite;
+}
+
+#counterTextTwo {
+    font-family: 'Domine', serif;
+    position: absolute;
+    opacity: 0.7;
+    color: antiquewhite;
+}
+
+#counterTextThree {
+    font-family: 'Domine', serif;
+    position: absolute;
+    opacity: 0.7;
+    color: chocolate;
+}
+
+@media only screen and (min-width: 1183px) {
+
+    #buttonDiv {
+        margin-top: 2%;
+        text-align: center;
+    }
+
+    #counterTextOne {
+        font-size: 150%;
+        top: 25%;
+        left: 33%;
+    }
+
+    #counterTextTwo {
+        font-size: 150%;
+        top: 35%;
+        left: 40%;
+    }
+
+    #counterTextThree {
+        font-size: 150%;
+        top: 45%;
+        left: 30%;
+    }
+
+    #navigation {
+        margin-bottom: 4%;
+    }
+
+    #laneTextOne {
+        font-size: 150%;
+        top: 35%;
+        left: 30.5%;
+    }
+
+    #champTextOne {
+        font-size: 150%;
+        top: 25%;
+        left: 34%;
+    }
+
+    #champTextTwo {
+        font-size: 150%;
+        top: 35%;
+        left: 38.5%;
+    }
+
+    #champTextThree {
+        font-size: 150%;
+        top: 45%;
+        left: 29%;
+    }
+
+    .diamondbox {
+        bottom: 30%;
+        left: 33%;
+    }
+
+    #champSelect {
+        top: 57%;
+        left: 20%;
+    }
+
+    #champCounter {
+        top: 57%;
+        left: 26%;
+    }
+
+    #chooseChampImg {
+        height: 95%;
+        bottom: 15%;
+    }
+
+    #submitImg {
+        height: 94%;
+        right: 3.5%;
+        top: -9.5%;
+    }
+
+    #submitButton {
+        font-size: 150%;
+    }
+
+    #top {
+        position: absolute;
+        top: 38.5%;
+        height: 35%;
+        left: -7%;
+    }
+
+    #top:hover {
+        content: url("../photos/img/topselectactive.png");
+        cursor: pointer;
+    }
+
+
+    #jng {
+        position: absolute;
+        height: 40%;
+        bottom: 115%;
+    }
+
+    #jng:hover {
+        content: url("../photos/img/jngselectactive.png");
+        cursor: pointer;
+    }
+
+    #mid {
+        position: absolute;
+        height: 35%;
+        left: 25%;
+        bottom: 155%;
+    }
+
+    #mid:hover {
+        content: url("../photos/img/midselectactive.png");
+        cursor: pointer;
+    }
+
+    #bot {
+        position: absolute;
+        height: 35%;
+        bottom: 115%;
+        left: 49%;
+    }
+
+    #bot:hover {
+        content: url("../photos/img/botselectactive.png");
+        cursor: pointer;
+    }
+
+    #supp {
+        position: absolute;
+        top: 38.5%;
+        height: 35%;
+        left: 56%;
+    }
+
+    #supp:hover {
+        content: url("../photos/img/suppselectactive.png");
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (min-width: 975px) and (max-width: 1182px) {
+    .diamondbox {
+        bottom: 20%;
+        left: 30%;
+    }
+}
+
+@media only screen and (min-width: 575px) and (max-width: 974px) {
+    .diamondbox {
+        bottom: 20%;
+        left: 22%;
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+    .diamondbox {
+
+    }
+}

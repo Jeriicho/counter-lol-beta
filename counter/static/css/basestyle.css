@@ -1,0 +1,234 @@
+body {
+    background-image: url("../photos/background/teemo.png"); /* TODO tee fill buttoni adjustment ära, pildid pole praegu sama suurusega */
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container {
+    margin-top: 5%;
+    height: 100%;
+}
+
+.laning {
+    position: relative;
+    height: 100%;
+    font-family: 'Domine', serif;
+}
+.champTextOne {
+    position: absolute;
+    font-size: 150%;
+    color: goldenrod;
+    top: 30%;
+    left: 24%;
+}
+
+.champTextTwo {
+    position: absolute;
+    font-size: 150%;
+}
+
+.champTextThree {
+    position: absolute;
+    font-size: 150%;
+}
+
+.row {
+    height: 100%;
+}
+
+#diamond {
+    /*margin-top: 85%; */
+    margin-left: 42%;
+}
+
+#diamond:hover {
+    content: url("../photos/img/lanebutton2.png");
+    cursor: pointer;
+}
+
+.clickedDiamondBox {
+    width: 90%;
+    left: 23.5%;
+    position: absolute;
+    bottom: 30%;
+}
+
+#clickedDiamond {
+    content: url("../photos/img/middlebutton.png");
+    margin-left: 14.5%;
+    width: 30%;
+    margin-bottom: -3%;
+}
+
+.diamondbox {
+    position: absolute;
+    height: auto;
+}
+
+.summoner-flag {
+    max-width: 100%;
+    height: auto;
+}
+
+.flag {
+    position: absolute;
+}
+
+#summoner {
+    height: auto;
+    width: 100%;
+}
+
+#jng {
+    visibility: hidden;
+    position: absolute;
+}
+
+#top {
+    visibility: hidden;
+    position: absolute;
+}
+
+#mid {
+    visibility: hidden;
+    position: absolute;
+}
+
+#bot {
+    visibility: hidden;
+    position: absolute;
+}
+
+#supp {
+    visibility: hidden;
+    position: absolute;
+}
+
+#fill {
+    visibility: hidden;
+    position: absolute;
+}
+
+#champSelect {
+    font-family: 'Domine', serif;
+    position: absolute;
+    background-color: rgba(0,0,0,0.1);
+    color: powderblue;
+
+}
+
+@media only screen and (min-width: 1183px) {
+    .diamondbox {
+        bottom: 30%;
+        left: 33%;
+    }
+
+    #champSelect {
+        top: 50%;
+        left: 20%;
+    }
+
+    #chooseChampImg {
+        height: 95%;
+        bottom: 15%;
+    }
+
+    #submitImg {
+        height: 94%;
+        right: 3%;
+        top: -9.5%;
+    }
+
+    #laneselectTop {
+        position: absolute;
+        top: 38.5%;
+        height: 35%;
+        left: -7%;
+    }
+
+    #laneselectTop:hover {
+        content: url("../photos/img/topselectactive.png");
+        cursor: pointer;
+    }
+
+    #laneselectFill {
+        position: absolute;
+        height: 35%;
+        left: 24%;
+        bottom: -90%;
+    }
+
+    #laneselectFill:hover {
+        content: url("../photos/img/fillselectactive.png");
+        cursor: pointer;
+    }
+
+    #laneselectJng {
+        position: absolute;
+        height: 40%;
+        bottom: 115%;
+    }
+
+    #laneselectJng:hover {
+        content: url("../photos/img/jngseletactive.png");
+        cursor: pointer;
+    }
+
+    #laneselectMid {
+        position: absolute;
+        height: 35%;
+        left: 25%;
+        bottom: 155%;
+    }
+
+    #laneselectMid:hover {
+        content: url("../photos/img/midselectactive.png");
+        cursor: pointer;
+    }
+
+    #laneselectBot {
+        position: absolute;
+        height: 35%;
+        bottom: 115%;
+        left: 49%;
+    }
+
+    #laneselectBot:hover {
+        content: url("../photos/img/botselectactive.png");
+        cursor: pointer;
+    }
+
+    #laneselectSupp {
+        position: absolute;
+        top: 38.5%;
+        height: 35%;
+        left: 56%;
+    }
+
+    #laneselectSupp:hover {
+        content: url("../photos/img/suppselectactive.png");
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (min-width: 975px) and (max-width: 1182px) {
+    .diamondbox {
+        bottom: 20%;
+        left: 30%;
+    }
+}
+
+@media only screen and (min-width: 575px) and (max-width: 974px) {
+    .diamondbox {
+        bottom: 20%;
+        left: 22%;
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+    .diamondbox {
+
+    }
+}
