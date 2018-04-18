@@ -1,3 +1,2 @@
 django_machina==0.6.0
 Django==2.0.3
-machina==0.1
