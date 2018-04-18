@@ -24,7 +24,9 @@ SECRET_KEY = '--lavzi%czx)_!kfs156)4*jg@3c$tywy#r@n1(r_8+rg)jkut'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'lolcounter.herokuapp.com'
+]
 
 # Application definition
 from machina import get_apps as get_machina_apps
