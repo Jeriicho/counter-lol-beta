@@ -1,3 +1,4 @@
 django_machina==0.6.0
 Django==2.0.3
 psycopg2==2.7.4
+dj_database_url==0.5.0
