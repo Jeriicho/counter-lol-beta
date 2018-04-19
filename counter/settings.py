@@ -25,7 +25,8 @@ SECRET_KEY = '--lavzi%czx)_!kfs156)4*jg@3c$tywy#r@n1(r_8+rg)jkut'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'lolcounter.herokuapp.com'
+    'lolcounter.herokuapp.com',
+    '127.0.0.1' #TODO remove. Only for local development
 ]
 
 # Application definition
@@ -158,6 +159,8 @@ HAYSTACK_CONNECTIONS = {
     },
 }
 
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')

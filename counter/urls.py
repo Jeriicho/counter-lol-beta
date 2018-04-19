@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 from . import views
 from machina.app import board
+from django.contrib.auth import views as auth_views
+
 
 
 urlpatterns = [
@@ -27,5 +29,11 @@ urlpatterns = [
     # index
     path('', views.index, name='counter'),
 
-    path('forum/', include(board.urls))
+    path('forum/', include(board.urls)),
+
+    path('login/', auth_views.login, name='login'),
+
+    path('logout/', auth_views.logout, name='logout'),
+
+    path('signup/', views.signup, name='signup')
 ]
