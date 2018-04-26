@@ -6,3 +6,4 @@ from .models import *
 admin.site.register(Champion)
 admin.site.register(Lane)
 admin.site.register(Ability)
+admin.site.register(Runes)

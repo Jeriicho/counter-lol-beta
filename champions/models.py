@@ -17,7 +17,7 @@ class Champion(models.Model):
     def __str__(self):
         return self.name
 
-class PrimaryRunes(models.Model):
+class Runes(models.Model):
     champion = models.ManyToManyField(Champion, related_name='runes')
     rune_class = models.CharField(max_length=20)
     rune_opt_one = models.CharField(max_length=100)
@@ -25,21 +25,6 @@ class PrimaryRunes(models.Model):
     rune_opt_three = models.CharField(max_length=100)
     rune_opt_four = models.CharField(max_length=100)
 
-
-    def set_runeOptOne(self, first, second, third, fourth=''):
-        if (fourth != ''):
-            self.rune_opt_one = first + ',' + second + ',' + third + ',' + fourth
-        else:
-            self.rune_opt_one = first + ',' + second + ',' + third
-
-    def set_runeOptTwo(self, first, second, third):
-        self.rune_opt_two = first + ',' + second + ',' + third
-
-    def set_runeOptThree(self, first, second, third):
-        self.rune_opt_three = first + ',' + second + ',' + third
-
-    def set_runeOptFour(self, first, second, third):
-        self.rune_opt_four = first + ',' + second + ',' + third
 
 
 class Ability(models.Model):
